@@ -2,7 +2,8 @@
 
 Line following robot project developed during my first year at IUT de Cachan. The robot participated in the annual line-following competition where robots must follow white lines on a dark blue carpet as fast as possible.
 
-⚠️ Note: This is a partial archive of the project. Some files (IHM.h and NBoard.h) are proprietary to IUT de Cachan and not included in this repository.
+⚠️ Note: I no longer have access to the full project files, including the schematics and PCB designs in KiCad. The only available resource is the main code. However, I can confirm that the sensor card utilized the CNY70 sensors.
+
 
 ## Project Overview
 
@@ -20,8 +21,6 @@ The robot uses a sophisticated state machine for navigation:
 - `etat_virG/etat_virD`: Sharp turn detection
 - `etat_sorG/etat_sorD`: Turn exit management
 
-
-
 ### Code Structure
 ```cpp
 // Main loop
@@ -31,4 +30,13 @@ while(true) {
     automateSuivi();    // State machine
     commandeMoteur();   // Motor control
 }
+```
+## Video Demo
+
+
+https://github.com/user-attachments/assets/56713101-6999-4cbb-93db-9e9f86febb86
+
+
+This demo video is provided by [the original source](https://tinyurl.com/36ry6fmx).
+
 
